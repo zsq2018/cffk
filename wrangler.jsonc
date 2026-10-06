@@ -1,6 +1,10 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "cffk",
+  // Turnstile 站点 Key（公开值，前端用）。Secret Key 存在 Worker 密钥里。
+  "vars": {
+    "TURNSTILE_SITE_KEY": "0x4AAAAAAFNlcAboZWPYWK0c"
+  },
   "compatibility_date": "2026-03-12",
   "main": "vike:server-entry",
   "send_email": [
